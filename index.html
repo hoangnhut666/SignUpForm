@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-form">
+        <!-- Header -->
+        <div class="header">
+            <video autoplay loop muted class="header-video">
+                <source src="video/3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="header-content">
+                <h2>ĐĂNG KÝ</h2>
+                <div class="breadcrumb">Trang chủ / Đăng ký</div>
+            </div>
+        </div>
+
+        <div class=""></div>
+
+        <!-- Form -->
+        <form action="/submit-url" method="POST">
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <div class="input-container">
+                    <input type="text" id="fullname" name="fullname" required>
+                    <div class="hint">Chỉ sử dụng chữ cái (a-z), số, @, - và dấu chấm, độ dài tối thiểu 3 ký tự</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" required>
+                    <div class="hint">Độ dài mật khẩu tối thiểu 6 ký tự bao gồm cả chữ và số</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Nhập lại mật khẩu</label>
+                <div class="input-container">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <span class="radio-label">Nam</span>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <span class="radio-label">Nữ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Bạn là</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="teacher" name="role" value="teacher" required>
+                        <span class="radio-label">Giảng viên</span>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="medical" name="role" value="medical">
+                        <span class="radio-label">Cán bộ y tế</span>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="student" name="role" value="student">
+                        <span class="radio-label">Sinh viên</span>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="other" name="role" value="other">
+                        <span class="radio-label">Khác</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Ngày sinh</label>
+                <div class="input-container">
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <div class="input-container">
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="unit">Tên đơn vị</label>
+                <div class="input-container">
+                    <input type="text" id="unit" name="unit" required>
+                </div>
+            </div>
+        </form>
+
+        <div class="signup-button">
+            <button type="submit"><span>&#10004 </span>Đăng ký</button>
+        </div>
+
+    </div>
+</body>
+</html>
